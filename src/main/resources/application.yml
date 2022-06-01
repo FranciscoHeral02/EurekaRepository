@@ -9,11 +9,11 @@ server:
   
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.65.1
   client:
     #telling the server not to register himself in the service registry
  
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/S
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
